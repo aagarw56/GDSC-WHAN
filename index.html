@@ -5,9 +5,148 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>gdsc</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <!-- CONNECT CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+App.jsx:
+import "./App.css";
+import heroImage from "./assets/women.jpg";
+
+
+function App() {
+ return (
+   <div className="app">
+     {/* NAVBAR */}
+     <nav className="navbar">
+       <div className="nav-left">
+         <span className="logo">❤️</span>
+         <h1>Wellness Network</h1>
+       </div>
+
+
+       <div className="nav-right">
+         <a href="#">Topics</a>
+         <a href="#">Articles</a>
+         <a href="#">Resources</a>
+         <a href="#">About</a>
+         <button className="nav-btn">Contact Us</button>
+       </div>
+     </nav>
+
+
+     {/* HERO SECTION */}
+     <section
+       className="hero"
+       style={{ backgroundImage: 'url(${heroImage})' }}
+     >
+       <div className="hero-overlay">
+         <h2>Your Wellness, Your Power</h2>
+         <p>
+           Supporting individuals with trusted health information, expert advice, and a caring community.
+         </p>
+
+
+         <div className="hero-buttons">
+           <button className="primary-btn">Get Started</button>
+           <button className="secondary-btn">Learn More</button>
+         </div>
+       </div>
+     </section>
+  
+     {/* STATS SECTION */}
+     <section className="stats">
+       <div className="stat">
+         <h3>300K+</h3>
+         <p>Members</p>
+       </div>
+
+
+       <div className="stat">
+         <h3>800+</h3>
+         <p>Wellness Articles</p>
+       </div>
+
+
+       <div className="stat">
+         <h3>40+</h3>
+         <p>Health Experts</p>
+       </div>
+
+
+       <div className="stat">
+         <h3>24/7</h3>
+         <p>Community Support</p>
+       </div>
+     </section>
+   </div>
+ );
+}
+
+{
+ box-sizing: border-box;
+}
+
+  <h1>Women’s Health Advancement Network</h1>
+  <p>Advancing access, education, and equity in women’s health.</p>
+
+  <!-- HEALTH TOPICS SECTION -->
+<section class="topics">
+  <h2>Health Topics</h2>
+  <p class="subtitle">
+    Explore comprehensive resources across various aspects of women's health
+  </p>
+
+  <div class="topics-grid">
+    <div class="card">
+      <h3>Safety</h3>
+      <p>
+        Essential resources for personal safety, protection strategies, and
+        empowerment tools for women.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Mental Wellness</h3>
+      <p>
+        Resources for mental health, stress management, and emotional wellbeing.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Hormonal Health</h3>
+      <p>
+        Understanding hormonal balance, menstrual health, menopause, PCOS,
+        thyroid health, and hormone-related conditions.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Reproductive Health</h3>
+      <p>
+        Comprehensive information about reproductive wellness, fertility,
+        and family planning.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Pregnancy Care</h3>
+      <p>
+        Prenatal care, pregnancy health guidance, nutrition for expectant
+        mothers, and postpartum support.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Sexual Wellness & Preventive Care</h3>
+      <p>
+        Sexual health resources, regular screenings, check-ups, and staying
+        ahead of health concerns.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+</body>
 </html>
