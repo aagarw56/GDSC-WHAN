@@ -1,94 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gdsc</title>
-    <!-- CONNECT CSS -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Women's Health Advancement Network</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-App.jsx:
-import "./App.css";
-import heroImage from "./assets/women.jpg";
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="logo">❤️</span>
+      <h1>Women's Health Advancement Network</h1>
+    </div>
 
+    <div class="nav-right">
+      <a href="#">Health Topics</a>
+      <a href="#">Articles</a>
+      <a href="#">Resources</a>
+      <a href="#">About</a>
+      <button class="nav-btn">Contact Us</button>
+    </div>
+  </nav>
 
-function App() {
- return (
-   <div className="app">
-     {/* NAVBAR */}
-     <nav className="navbar">
-       <div className="nav-left">
-         <span className="logo">❤️</span>
-         <h1>Wellness Network</h1>
-       </div>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <p class="hero-tagline">Your Health, Your Journey</p>
+      <h2>
+        Empowering women with comprehensive health resources,
+        expert guidance, and a supportive community for every stage of life.
+      </h2>
 
+      <div class="hero-buttons">
+        <button class="primary-btn">Get Started</button>
+        <button class="secondary-btn">Learn More</button>
+      </div>
+    </div>
+  </section>
 
-       <div className="nav-right">
-         <a href="#">Topics</a>
-         <a href="#">Articles</a>
-         <a href="#">Resources</a>
-         <a href="#">About</a>
-         <button className="nav-btn">Contact Us</button>
-       </div>
-     </nav>
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat">
+      <h3>500K+</h3>
+      <p>Women Supported</p>
+    </div>
+    <div class="stat">
+      <h3>1,000+</h3>
+      <p>Health Articles</p>
+    </div>
+    <div class="stat">
+      <h3>50+</h3>
+      <p>Expert Contributors</p>
+    </div>
+    <div class="stat">
+      <h3>24/7</h3>
+      <p>Community Support</p>
+    </div>
+  </section>
+</body>
+</html>
 
-
-     {/* HERO SECTION */}
-     <section
-       className="hero"
-       style={{ backgroundImage: 'url(${heroImage})' }}
-     >
-       <div className="hero-overlay">
-         <h2>Your Wellness, Your Power</h2>
-         <p>
-           Supporting individuals with trusted health information, expert advice, and a caring community.
-         </p>
-
-
-         <div className="hero-buttons">
-           <button className="primary-btn">Get Started</button>
-           <button className="secondary-btn">Learn More</button>
-         </div>
-       </div>
-     </section>
-  
-     {/* STATS SECTION */}
-     <section className="stats">
-       <div className="stat">
-         <h3>300K+</h3>
-         <p>Members</p>
-       </div>
-
-
-       <div className="stat">
-         <h3>800+</h3>
-         <p>Wellness Articles</p>
-       </div>
-
-
-       <div className="stat">
-         <h3>40+</h3>
-         <p>Health Experts</p>
-       </div>
-
-
-       <div className="stat">
-         <h3>24/7</h3>
-         <p>Community Support</p>
-       </div>
-     </section>
-   </div>
- );
-}
-
-{
- box-sizing: border-box;
-}
 
   <h1>Women’s Health Advancement Network</h1>
-  <p>Advancing access, education, and equity in women’s health.</p>
+  <p>Advancing access, education, and equity in women’s 
 
   <!-- HEALTH TOPICS SECTION -->
 <section class="topics">
