@@ -1,14 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import "./App.css";
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Stats from "./components/Stats";
+import FeaturedArticles from "./components/FeaturedArticles";
+import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
+import "./styles/main.css";
 
-export default function App() {
+function App() {
   return (
-    <div className="app">
-      <h1>Hello Aanya!</h1>
-      <p>Your React project is set up and ready to build 🎉</p>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Stats />
+      <FeaturedArticles />
+      <Newsletter />
+      <Footer />
+    </>
   );
 }
 
+export default App;
