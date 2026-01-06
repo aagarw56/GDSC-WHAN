@@ -149,7 +149,6 @@ a:hover {
   font-size: 0.9rem;
   color: #555;
 }
-
 /* ================= FEATURED ARTICLES ================= */
 .featured {
   padding: 72px 24px;
@@ -180,12 +179,45 @@ a:hover {
   line-height: 1.5;
 }
 
+/* Grid */
 .featured__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
 }
 
+/* ================= CLICKABLE CARD LINK ================= */
+.card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure clicks are not blocked */
+.card,
+.card * {
+  pointer-events: auto;
+}
+
+/* Hover + focus interaction */
+.card-link:focus-visible {
+  outline: 2px solid #7c3aed;
+  outline-offset: 4px;
+}
+
+.card-link .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-link:hover .card {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+/* ================= CARD ================= */
 .card {
   border: 1px solid #e5e7eb;
   border-radius: 18px;
@@ -253,6 +285,7 @@ a:hover {
   font-size: 14px;
   line-height: 1.6;
 }
+
 
 /* ================= NEWSLETTER ================= */
 .newsletter {
