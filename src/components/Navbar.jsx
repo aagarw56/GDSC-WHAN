@@ -1,9 +1,9 @@
-function Navbar() {
+export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-left">
         <span className="logo">❤️</span>
-        <h1>Women’s Health Advancement Network</h1>
+        <h1>Women's Health Advancement Network</h1>
       </div>
 
       <div className="nav-right">
@@ -16,5 +16,3 @@ function Navbar() {
     </nav>
   );
 }
-
-export default Navbar;

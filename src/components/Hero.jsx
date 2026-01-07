@@ -1,14 +1,8 @@
-import heroImage from "../assets/women.jpg";
-
-function Hero() {
+export default function Hero() {
   return (
-    <section
-      className="hero"
-      style={{ backgroundImage: `url(${heroImage})` }}
-    >
+    <section className="hero">
       <div className="hero-overlay">
         <p className="hero-tagline">Your Health, Your Journey</p>
-
         <h2>
           Empowering women with comprehensive health resources, expert guidance,
           and a supportive community for every stage of life.
@@ -22,5 +16,3 @@ function Hero() {
     </section>
   );
 }
-
-export default Hero;

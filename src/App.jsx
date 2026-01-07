@@ -1,23 +1,21 @@
-import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
-import FeaturedArticles from "./components/FeaturedArticles";
+import HealthTopics from "./components/HealthTopics";
+import Featured from "./components/Featured";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
-import "./styles/main.css";
 
-function App() {
+export default function App() {
   return (
     <>
       <Navbar />
       <Hero />
       <Stats />
-      <FeaturedArticles />
+      <HealthTopics />
+      <Featured />
       <Newsletter />
       <Footer />
     </>
   );
 }
-
-export default App;
