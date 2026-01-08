@@ -11,75 +11,100 @@ export default function Featured() {
 
         <div className="featured__grid">
           {/* Card 1 */}
-          <article className="card">
-            <div className="card__media">
-              <img
-                src="/images/article-1.jpg"
-                alt="Mother holding baby"
-              />
+          <a
+        href="https://health.osu.edu/expert-guides/healthy-pregnancy-guide"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="card-link"
+      >
+        <article class="card">
+          <div class="card__media">
+            <img
+              src="images/article-1.jpg"
+              alt="Mother holding baby"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="card__content">
+            <div class="card__meta">
+              <span class="pill">Reproductive Health</span>
+              <span class="readtime">8 min read</span>
             </div>
-            <div className="card__content">
-              <div className="card__meta">
-                <span className="pill">Reproductive Health</span>
-                <span className="readtime">8 min read</span>
-              </div>
-              <h3 className="card__title">
-                Your Guide to a Healthy Pregnancy
-              </h3>
-              <p className="card__desc">
-                Essential information for expecting mothers on prenatal care,
-                nutrition, and wellness.
-              </p>
-            </div>
-          </article>
+
+            <h3 class="card__title">Your Guide to a Healthy Pregnancy</h3>
+            <p class="card__desc">
+              Essential information for expecting mothers on prenatal care,
+              nutrition, and wellness.
+            </p>
+          </div>
+        </article>
+      </a>
 
           {/* Card 2 */}
-          <article className="card">
-            <div className="card__media">
-              <img
-                src="/images/article-2.jpg"
-                alt="Personal safety tips"
-              />
+          <a
+        href="https://www.desotosheriff.com/community/tips_for_women_on_staying_safe!.php"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="card-link"
+      >
+        <article class="card">
+          <div class="card__media">
+            <img
+              src="images/article-2.jpg"
+              alt="Woman standing confidently"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="card__content">
+            <div class="card__meta">
+              <span class="pill">Safety</span>
+              <span class="readtime">6 min read</span>
             </div>
-            <div className="card__content">
-              <div className="card__meta">
-                <span className="pill">Safety</span>
-                <span className="readtime">6 min read</span>
-              </div>
-              <h3 className="card__title">
-                Personal Safety Tips for Women
-              </h3>
-              <p className="card__desc">
-                Essential strategies and resources to help you stay safe and
-                empowered in daily life.
-              </p>
-            </div>
-          </article>
+
+            <h3 class="card__title">Personal Safety Tips for Women</h3>
+            <p class="card__desc">
+              Essential strategies and resources to help you stay safe and
+              empowered in daily life.
+            </p>
+          </div>
+        </article>
+      </a>
+
 
           {/* Card 3 */}
-          <article className="card">
-            <div className="card__media card__media--bw">
-              <img
-                src="/images/article-3.jpg"
-                alt="Managing stress"
-              />
+          <a
+        href="https://www.cdc.gov/mental-health/living-with/index.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="card-link"
+      >
+        <article class="card">
+          <div class="card__media card__media--bw">
+            <img
+              src="images/article-3.jpg"
+              alt="Woman relaxing outdoors"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="card__content">
+            <div class="card__meta">
+              <span class="pill">Mental Wellness</span>
+              <span class="readtime">6 min read</span>
             </div>
-            <div className="card__content">
-              <div className="card__meta">
-                <span className="pill">Mental Wellness</span>
-                <span className="readtime">6 min read</span>
-              </div>
-              <h3 className="card__title">
-                Managing Stress in Daily Life
-              </h3>
-              <p className="card__desc">
-                Practical techniques for reducing stress and improving mental
-                health.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+
+            <h3 class="card__title">Managing Stress in Daily Life</h3>
+            <p class="card__desc">
+              Practical techniques for reducing stress and improving mental
+              health.
+            </p>
+          </div>
+        </article>
+      </a>
+    </div>
+  </div>
+</section>
   );
 }

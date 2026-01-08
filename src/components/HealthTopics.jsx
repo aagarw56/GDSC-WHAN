@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function HealthTopics() {
   return (
     <section className="topics">
@@ -7,58 +9,70 @@ export default function HealthTopics() {
       </p>
 
       <div className="topics-grid">
-        <div className="topic-card">
-          <span className="topic-icon">🛡️</span>
-          <h3>Safety</h3>
-          <p>
-            Essential resources for personal safety, protection strategies, and
-            empowerment tools for women.
-          </p>
-        </div>
+        <Link to="/topics/safety" className="topic-link">
+          <div className="topic-card">
+            <span className="topic-icon">🛡️</span>
+            <h3>Safety</h3>
+            <p>
+              Essential resources for personal safety, protection strategies, and
+              empowerment tools for women.
+            </p>
+          </div>
+        </Link>
 
-        <div className="topic-card">
-          <span className="topic-icon">🧠</span>
-          <h3>Mental Wellness</h3>
-          <p>
-            Resources for mental health, stress management, and emotional
-            wellbeing.
-          </p>
-        </div>
+        <Link to="/topics/mental-wellness" className="topic-link">
+          <div className="topic-card">
+            <span className="topic-icon">🧠</span>
+            <h3>Mental Wellness</h3>
+            <p>
+              Resources for mental health, stress management, and emotional
+              wellbeing.
+            </p>
+          </div>
+        </Link>
 
-        <div className="topic-card">
-          <span className="topic-icon">⚖️</span>
-          <h3>Hormonal Health</h3>
-          <p>
-            Understanding hormonal balance, menstrual health, menopause, PCOS,
-            and thyroid health.
-          </p>
-        </div>
+        <Link to="/topics/hormonal-health" className="topic-link">
+          <div className="topic-card">
+            <span className="topic-icon">⚖️</span>
+            <h3>Hormonal Health</h3>
+            <p>
+              Understanding hormonal balance, menstrual health, menopause, PCOS,
+              and thyroid health.
+            </p>
+          </div>
+        </Link>
 
-        <div className="topic-card">
-          <span className="topic-icon">❤️</span>
-          <h3>Reproductive Health</h3>
-          <p>
-            Comprehensive information about reproductive wellness, fertility,
-            and family planning.
-          </p>
-        </div>
+        <Link to="/topics/reproductive-health" className="topic-link">
+          <div className="topic-card">
+            <span className="topic-icon">❤️</span>
+            <h3>Reproductive Health</h3>
+            <p>
+              Comprehensive information about reproductive wellness, fertility,
+              and family planning.
+            </p>
+          </div>
+        </Link>
 
-        <div className="topic-card">
-          <span className="topic-icon">🤰</span>
-          <h3>Pregnancy Care</h3>
-          <p>
-            Prenatal care, nutrition for expectant mothers, and postpartum
-            support.
-          </p>
-        </div>
+        <Link to="/topics/pregnancy-care" className="topic-link">
+          <div className="topic-card">
+            <span className="topic-icon">🤰</span>
+            <h3>Pregnancy Care</h3>
+            <p>
+              Prenatal care, nutrition for expectant mothers, and postpartum
+              support.
+            </p>
+          </div>
+        </Link>
 
-        <div className="topic-card">
-          <span className="topic-icon">✨</span>
-          <h3>Sexual Wellness</h3>
-          <p>
-            Sexual health resources, regular screenings, and preventive care.
-          </p>
-        </div>
+        <Link to="/topics/sexual-wellness" className="topic-link">
+          <div className="topic-card">
+            <span className="topic-icon">✨</span>
+            <h3>Sexual Wellness</h3>
+            <p>
+              Sexual health resources, regular screenings, and preventive care.
+            </p>
+          </div>
+        </Link>
       </div>
     </section>
   );

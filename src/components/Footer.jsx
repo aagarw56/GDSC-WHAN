@@ -22,9 +22,6 @@ export default function Footer() {
               <h4 className="footer__heading">Quick Links</h4>
               <ul className="footer__links">
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
               </ul>
             </nav>
 
@@ -38,17 +35,6 @@ export default function Footer() {
                 <li><a href="#">FAQs</a></li>
               </ul>
             </nav>
-
-            {/* Social */}
-            <div className="footer__col">
-              <h4 className="footer__heading">Follow Us</h4>
-              <div className="social">
-                <a className="social__link" href="#">Facebook</a>
-                <a className="social__link" href="#">Instagram</a>
-                <a className="social__link" href="#">Twitter</a>
-                <a className="social__link" href="#">YouTube</a>
-              </div>
-            </div>
           </div>
 
           <div className="footer__divider"></div>
