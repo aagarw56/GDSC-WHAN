@@ -8,6 +8,7 @@ import Featured from "./components/Featured";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
 
+import AboutUs from "./pages/AboutUs";
 import Safety from "./pages/Safety";
 import MentalWellness from "./pages/MentalWellness";
 import HormonalHealth from "./pages/HormonalHealth";
@@ -35,6 +36,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/about-us" element={<AboutUs />} />
       <Route path="/topics/safety" element={<Safety />} />
       <Route path="/topics/mental-wellness" element={<MentalWellness />} />
       <Route path="/topics/hormonal-health" element={<HormonalHealth />} />

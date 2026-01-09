@@ -7,11 +7,11 @@ export default function Navbar() {
       </div>
 
       <div className="nav-right">
-        <a href="#">Health Topics</a>
+        <a href="">Health Topics</a>
         <a href="#">Articles</a>
         <a href="#">Resources</a>
         <a href="#">About</a>
-        <button className="nav-btn">Contact Us</button>
+        <button className="nav-btn">Sign Up Here</button>
       </div>
     </nav>
   );

@@ -19,11 +19,7 @@ export default function Featured() {
       >
         <article class="card">
           <div class="card__media">
-            <img
-              src="images/article-1.jpg"
-              alt="Mother holding baby"
-              loading="lazy"
-            />
+            <img src="/images/motherwbaby.png" alt="Mother with baby" />
           </div>
 
           <div class="card__content">
@@ -51,9 +47,8 @@ export default function Featured() {
         <article class="card">
           <div class="card__media">
             <img
-              src="images/article-2.jpg"
+              src="/images/safety.png"
               alt="Woman standing confidently"
-              loading="lazy"
             />
           </div>
 
@@ -83,9 +78,8 @@ export default function Featured() {
         <article class="card">
           <div class="card__media card__media--bw">
             <img
-              src="images/article-3.jpg"
+              src="/images/stress.png"
               alt="Woman relaxing outdoors"
-              loading="lazy"
             />
           </div>
 
