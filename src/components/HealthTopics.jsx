@@ -1,6 +1,6 @@
 export default function HealthTopics() {
   return (
-    <section className="topics">
+    <section id="topics" className="topics">
       <h2 className="topics-title">Health Topics</h2>
       <p className="topics-subtitle">
         Explore comprehensive resources across various aspects of women's health

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <nav className="navbar">
@@ -7,12 +9,18 @@ export default function Navbar() {
       </div>
 
       <div className="nav-right">
-        <a href="#">Health Topics</a>
-        <a href="#">Articles</a>
-        <a href="#">Resources</a>
-        <a href="#">About</a>
-        <button className="nav-btn">Contact Us</button>
+        {/* Scroll to sections */}
+        <a href="#topics">Health Topics</a>
+        <a href="#articles">Articles</a>
+        <a href="#resources">Resources</a>
+        <a href="#about">About</a>
+
+        {/* Go to another page */}
+        <Link to="/login">
+          <button className="nav-btn">Login</button>
+        </Link>
       </div>
     </nav>
   );
 }
+

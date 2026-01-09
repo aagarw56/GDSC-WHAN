@@ -1,6 +1,6 @@
 export default function Featured() {
   return (
-    <section className="featured">
+    <section id="articles" className="featured">
       <div className="featured__container">
         <header className="featured__header">
           <h2 className="featured__title">Featured Articles</h2>
@@ -83,3 +83,4 @@ export default function Featured() {
     </section>
   );
 }
+

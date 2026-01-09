@@ -22,9 +22,6 @@ export default function Footer() {
               <h4 className="footer__heading">Quick Links</h4>
               <ul className="footer__links">
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
               </ul>
             </nav>
 
