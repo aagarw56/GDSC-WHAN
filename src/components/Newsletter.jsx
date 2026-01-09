@@ -5,9 +5,32 @@ export default function Newsletter() {
     "We respect your privacy. Unsubscribe at any time."
   );
 
-  function handleSubmit(e) {
+  const [email, setEmail] = useState("");
+
+  async function handleSubmit(e) {
     e.preventDefault();
-    setMessage("Thanks! You’re subscribed (demo).");
+
+    try {
+      const res = await fetch("http://localhost:8000/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ email })
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        setMessage(data.message || "Something went wrong");
+        return;
+      }
+
+      setMessage("Thanks! You’re subscribed 🎉");
+      setEmail("");
+    } catch {
+      setMessage("Server error. Try again later.");
+    }
   }
 
   return (
@@ -25,6 +48,8 @@ export default function Newsletter() {
             type="email"
             placeholder="Enter your email"
             required
+            value={email}
+            onChange={e => setEmail(e.target.value)}
           />
           <button className="newsletter__button">Subscribe</button>
         </form>
