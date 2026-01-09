@@ -11,7 +11,17 @@ import Login from "./pages/Login";
 import About from "./pages/About";  // import About page
 import ScrollToHash from "./components/ScrollToHash";
 
-export default function App() {
+import AboutUs from "./pages/AboutUs";
+import Safety from "./pages/Safety";
+import MentalWellness from "./pages/MentalWellness";
+import HormonalHealth from "./pages/HormonalHealth";
+import PregnancyCare from "./pages/PregnancyCare";
+import ReproductiveHealth from "./pages/ReproductiveHealth";
+import SexualWellness from "./pages/SexualWellness";
+
+
+
+function Home() {
   return (
     <>
       <ScrollToHash />
@@ -37,5 +47,21 @@ export default function App() {
 
       <Footer />
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/topics/safety" element={<Safety />} />
+      <Route path="/topics/mental-wellness" element={<MentalWellness />} />
+      <Route path="/topics/hormonal-health" element={<HormonalHealth />} />
+      <Route path="/topics/pregnancy-care" element={<PregnancyCare />} />
+      <Route path="/topics/reproductive-health" element={<ReproductiveHealth />} />
+      <Route path="/topics/sexual-wellness" element={<SexualWellness />} />
+
+    </Routes>
   );
 }

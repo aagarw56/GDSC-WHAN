@@ -16,7 +16,7 @@ export default function Newsletter() {
         <p className="newsletter__kicker">Stay Connected</p>
         <h2 className="newsletter__title">
           Get the latest health tips, articles, and wellness advice delivered to
-          your inbox
+          your inbox!
         </h2>
 
         <form className="newsletter__form" onSubmit={handleSubmit}>

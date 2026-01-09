@@ -111,24 +111,30 @@ a:hover {
 
 /* ================= HERO ================= */
 .hero {
-  background: linear-gradient(rgba(130, 50, 180, 0.6), rgba(130, 50, 180, 0.6)),
-              url("images/women.jpg") center / cover no-repeat;
+  background: 
+    linear-gradient(
+      rgba(130, 50, 180, 0.6),
+      rgba(130, 50, 180, 0.6)
+    ),
+    url("/images/Untitled design.png") center / cover no-repeat;
+
   height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+  padding: 0 1.5rem;
 }
 
 .hero-overlay {
   max-width: 800px;
-  padding: 0 1rem;
 }
 
 .hero-tagline {
   font-size: 0.95rem;
   margin-bottom: 1rem;
+  letter-spacing: 0.05em;
 }
 
 .hero h2 {
@@ -138,14 +144,20 @@ a:hover {
   line-height: 1.4;
 }
 
-/* Hero buttons */
+/* ================= HERO BUTTONS ================= */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .hero-buttons button {
-  margin: 0 0.5rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   font-size: 0.9rem;
+  transition: all 0.2s ease;
 }
 
 .primary-btn {
@@ -153,11 +165,31 @@ a:hover {
   color: #8b3fd1;
 }
 
+.primary-btn:hover {
+  background: #f2e9ff;
+}
+
 .secondary-btn {
   background: transparent;
   border: 2px solid white;
   color: white;
 }
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+}
+
 
 /* ================= STATS ================= */
 .stats {
@@ -228,6 +260,12 @@ a:hover {
   font-size: 14.5px;
   color: #6b7280;
   line-height: 1.6;
+}
+
+.topic-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 900px) {

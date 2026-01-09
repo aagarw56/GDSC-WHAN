@@ -26,6 +26,10 @@ export default function Footer() {
                 <li>
                   <Link to="/about">About Us</Link>
                 </li>
+
+                  <Link to="/about-us">About Us</Link>
+                </li>
+
               </ul>
             </nav>
 
@@ -39,17 +43,6 @@ export default function Footer() {
                 <li><Link to="/faqs">FAQs</Link></li>
               </ul>
             </nav>
-
-            {/* Social */}
-            <div className="footer__col">
-              <h4 className="footer__heading">Follow Us</h4>
-              <div className="social">
-                <a className="social__link" href="#">Facebook</a>
-                <a className="social__link" href="#">Instagram</a>
-                <a className="social__link" href="#">Twitter</a>
-                <a className="social__link" href="#">YouTube</a>
-              </div>
-            </div>
           </div>
 
           <div className="footer__divider"></div>

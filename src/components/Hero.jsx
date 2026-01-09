@@ -3,6 +3,7 @@ export default function Hero() {
     <section id="about" className="hero">
       <div className="hero-overlay">
         <p className="hero-tagline">Your Health, Your Journey</p>
+
         <h2>
           Empowering women with comprehensive health resources, expert guidance,
           and a supportive community for every stage of life.
