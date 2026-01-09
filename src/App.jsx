@@ -8,14 +8,16 @@ import Featured from "./components/Featured";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
 import Login from "./pages/Login";
+import About from "./pages/About";  // import About page
+import ScrollToHash from "./components/ScrollToHash";
 
 export default function App() {
   return (
     <>
+      <ScrollToHash />
       <Navbar />
-
+      
       <Routes>
-        {/* HOME PAGE */}
         <Route
           path="/"
           element={
@@ -25,14 +27,15 @@ export default function App() {
               <HealthTopics />
               <Featured />
               <Newsletter />
-              <Footer />
             </>
           }
         />
 
-        {/* LOGIN PAGE */}
         <Route path="/login" element={<Login />} />
+        <Route path="/about" element={<About />} />  {/* About route */}
       </Routes>
+
+      <Footer />
     </>
   );
 }

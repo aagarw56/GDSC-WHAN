@@ -50,17 +50,11 @@ a:hover {
 
 /* ================= NAVBAR ================= */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
   background: white;
-
-  border-bottom: 1px solid #e5e7eb;
 }
 
 .nav-left {
@@ -85,28 +79,6 @@ a:hover {
   font-size: 0.95rem;
 }
 
-.nav-right a {
-  position: relative;
-  padding-bottom: 4px;
-}
-
-.nav-right a.active {
-  color: #8b3fd1;
-  font-weight: 600;
-}
-
-.nav-right a.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 100%;
-  height: 2px;
-  background: #8b3fd1;
-  border-radius: 2px;
-}
-
-
 .nav-btn {
   background: #8b3fd1;
   color: white;
@@ -116,6 +88,26 @@ a:hover {
   cursor: pointer;
   font-size: 0.9rem;
 }
+
+/* ===== RESET ONLY NON-LOGIN NAV BUTTONS ===== */
+.nav-right button:not(.nav-btn) {
+  all: unset;
+  cursor: pointer;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+
+  margin-right: 1.5rem;
+}
+
+/* Hover effect for text links */
+.nav-right button:not(.nav-btn):hover {
+  color: #8b3fd1;
+}
+
+
 
 /* ================= HERO ================= */
 .hero {
@@ -588,6 +580,9 @@ a:hover {
 
   section {
   scroll-margin-top: 90px;
+}
+* {
+  font-family: 'Inter', sans-serif;
 }
 
 }

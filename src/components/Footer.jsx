@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="site-footer">
@@ -21,18 +23,20 @@ export default function Footer() {
             <nav className="footer__col">
               <h4 className="footer__heading">Quick Links</h4>
               <ul className="footer__links">
-                <li><a href="#">About Us</a></li>
+                <li>
+                  <Link to="/about">About Us</Link>
+                </li>
               </ul>
             </nav>
 
             {/* Resources */}
-            <nav className="footer__col">
+            <nav className="footer__col" id="resources">
               <h4 className="footer__heading">Resources</h4>
               <ul className="footer__links">
-                <li><a href="#">Health Library</a></li>
-                <li><a href="#">Find a Doctor</a></li>
-                <li><a href="#">Community Forum</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><Link to="/health-library">Health Library</Link></li>
+                <li><Link to="/find-doctor">Find a Doctor</Link></li>
+                <li><Link to="/forum">Community Forum</Link></li>
+                <li><Link to="/faqs">FAQs</Link></li>
               </ul>
             </nav>
 
@@ -56,11 +60,11 @@ export default function Footer() {
             </p>
 
             <ul className="footer__legal">
-              <li><a href="#">Privacy Policy</a></li>
+              <li><Link to="/privacy">Privacy Policy</Link></li>
               <li className="dot">•</li>
-              <li><a href="#">Terms of Service</a></li>
+              <li><Link to="/terms">Terms of Service</Link></li>
               <li className="dot">•</li>
-              <li><a href="#">Medical Disclaimer</a></li>
+              <li><Link to="/disclaimer">Medical Disclaimer</Link></li>
             </ul>
           </div>
         </div>

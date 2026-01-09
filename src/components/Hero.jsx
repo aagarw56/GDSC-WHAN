@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="hero">
+    <section id="about" className="hero">
       <div className="hero-overlay">
         <p className="hero-tagline">Your Health, Your Journey</p>
         <h2>
