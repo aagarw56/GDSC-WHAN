@@ -1,14 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
 
-export default function App() {
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Stats from "./components/Stats";
+import HealthTopics from "./components/HealthTopics";
+import Featured from "./components/Featured";
+import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
+
+import Safety from "./pages/Safety";
+import MentalWellness from "./pages/MentalWellness";
+import HormonalHealth from "./pages/HormonalHealth";
+import PregnancyCare from "./pages/PregnancyCare";
+import ReproductiveHealth from "./pages/ReproductiveHealth";
+import SexualWellness from "./pages/SexualWellness";
+
+
+
+function Home() {
   return (
-    <div className="app">
-      <h1>Hello Aanya!</h1>
-      <p>Your React project is set up and ready to build 🎉</p>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Stats />
+      <HealthTopics />
+      <Featured />
+      <Newsletter />
+      <Footer />
+    </>
   );
 }
 
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/topics/safety" element={<Safety />} />
+      <Route path="/topics/mental-wellness" element={<MentalWellness />} />
+      <Route path="/topics/hormonal-health" element={<HormonalHealth />} />
+      <Route path="/topics/pregnancy-care" element={<PregnancyCare />} />
+      <Route path="/topics/reproductive-health" element={<ReproductiveHealth />} />
+      <Route path="/topics/sexual-wellness" element={<SexualWellness />} />
+
+    </Routes>
+  );
+}
