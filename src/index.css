@@ -11,6 +11,15 @@ html, body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  color: #111827;
+  background: #ffffff;
+}
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   color: #111827;
@@ -80,26 +89,52 @@ a:hover {
   font-size: 0.9rem;
 }
 
+/* ===== RESET ONLY NON-LOGIN NAV BUTTONS ===== */
+.nav-right button:not(.nav-btn) {
+  all: unset;
+  cursor: pointer;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+
+  margin-right: 1.5rem;
+}
+
+/* Hover effect for text links */
+.nav-right button:not(.nav-btn):hover {
+  color: #8b3fd1;
+}
+
+
+
 /* ================= HERO ================= */
 .hero {
-  background: linear-gradient(rgba(130, 50, 180, 0.6), rgba(130, 50, 180, 0.6)),
-              url("images/women.jpg") center / cover no-repeat;
+  background: 
+    linear-gradient(
+      rgba(130, 50, 180, 0.6),
+      rgba(130, 50, 180, 0.6)
+    ),
+    url("/images/Untitled design.png") center / cover no-repeat;
+
   height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+  padding: 0 1.5rem;
 }
 
 .hero-overlay {
   max-width: 800px;
-  padding: 0 1rem;
 }
 
 .hero-tagline {
   font-size: 0.95rem;
   margin-bottom: 1rem;
+  letter-spacing: 0.05em;
 }
 
 .hero h2 {
@@ -109,14 +144,20 @@ a:hover {
   line-height: 1.4;
 }
 
-/* Hero buttons */
+/* ================= HERO BUTTONS ================= */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .hero-buttons button {
-  margin: 0 0.5rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   font-size: 0.9rem;
+  transition: all 0.2s ease;
 }
 
 .primary-btn {
@@ -124,11 +165,31 @@ a:hover {
   color: #8b3fd1;
 }
 
+.primary-btn:hover {
+  background: #f2e9ff;
+}
+
 .secondary-btn {
   background: transparent;
   border: 2px solid white;
   color: white;
 }
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+}
+
 
 /* ================= STATS ================= */
 .stats {
@@ -554,5 +615,13 @@ a:hover {
     flex-wrap: wrap;
     gap: 10px;
   }
+
+  section {
+  scroll-margin-top: 90px;
+}
+* {
+  font-family: 'Inter', sans-serif;
+}
+
 }
 

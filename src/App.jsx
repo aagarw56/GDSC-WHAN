@@ -7,7 +7,11 @@ import HealthTopics from "./components/HealthTopics";
 import Featured from "./components/Featured";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
+import Login from "./pages/Login";
+import About from "./pages/About";  // import About page
+import ScrollToHash from "./components/ScrollToHash";
 
+import AboutUs from "./pages/AboutUs";
 import Safety from "./pages/Safety";
 import MentalWellness from "./pages/MentalWellness";
 import HormonalHealth from "./pages/HormonalHealth";
@@ -20,12 +24,27 @@ import SexualWellness from "./pages/SexualWellness";
 function Home() {
   return (
     <>
+      <ScrollToHash />
       <Navbar />
-      <Hero />
-      <Stats />
-      <HealthTopics />
-      <Featured />
-      <Newsletter />
+      
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Stats />
+              <HealthTopics />
+              <Featured />
+              <Newsletter />
+            </>
+          }
+        />
+
+        <Route path="/login" element={<Login />} />
+        <Route path="/about" element={<About />} />  {/* About route */}
+      </Routes>
+
       <Footer />
     </>
   );
@@ -35,6 +54,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/about-us" element={<AboutUs />} />
       <Route path="/topics/safety" element={<Safety />} />
       <Route path="/topics/mental-wellness" element={<MentalWellness />} />
       <Route path="/topics/hormonal-health" element={<HormonalHealth />} />
