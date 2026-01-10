@@ -1,5 +1,3 @@
-import Footer from "../components/Footer";
-
 export default function ReproductiveHealth() {
   return (
     <>
@@ -364,8 +362,6 @@ export default function ReproductiveHealth() {
           </section>
         </div>
       </main>
-
-      <Footer />
     </>
   );
 }
