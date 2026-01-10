@@ -17,4 +17,18 @@ conn.execute("""
     );
 """)
 
+#google maps marker
+conn.execute('''
+             CREATE TABLE IF NOT EXISTS markers (
+             id INTEGER PRIMARY KEY AUTOINCREMENT,
+             user_id INTEGER NOT NULL,
+             latitude REAL NOT NULL,
+             longitude REAL NOT NULL,
+             description TEXT,
+             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+             FOREIGN KEY (user_id) REFERENCES users(id)
+             );
+             ''')
+conn.commit()
 conn.close()
+
