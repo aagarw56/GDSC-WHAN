@@ -1,5 +1,3 @@
-import Footer from "../components/Footer";
-
 export default function PregnancyCare() {
   return (
     <>
@@ -343,8 +341,6 @@ export default function PregnancyCare() {
           </section>
         </div>
       </main>
-
-      <Footer />
     </>
   );
 }
