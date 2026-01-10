@@ -1,0 +1,6 @@
+Flask
+Werkzeug
+flask-jwt-extended
+flask-cors
+flask-mail
+requests
