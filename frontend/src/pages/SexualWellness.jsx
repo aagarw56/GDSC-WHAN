@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 
 export default function SexualWellness() {
   return (
@@ -536,8 +535,6 @@ export default function SexualWellness() {
           </section>
         </div>
       </main>
-
-      <Footer />
     </>
   );
 }
