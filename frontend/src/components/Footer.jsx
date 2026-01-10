@@ -30,9 +30,6 @@ export default function Footer() {
                   <Link to="/find-doctor">Find a Doctor</Link>
                 </li>
                 <li>
-                  <Link to="/community-forum">Community Forum</Link>
-                </li>
-                <li>
                 </li>
               </ul>
             </nav>
