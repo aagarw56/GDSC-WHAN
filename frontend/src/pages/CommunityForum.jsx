@@ -1,6 +1,4 @@
 import { useEffect, useMemo, useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 const STORAGE_KEY = "whan_forum_posts_v1";
 
@@ -104,7 +102,6 @@ export default function CommunityForum() {
 
   return (
     <>
-      <Navbar />
 
       <main className="topic-page">
         <section className="topic-hero">
@@ -252,8 +249,6 @@ export default function CommunityForum() {
           </section>
         </div>
       </main>
-
-      <Footer />
     </>
   );
 }
