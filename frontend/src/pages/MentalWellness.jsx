@@ -1,5 +1,3 @@
-import Footer from "../components/Footer";
-
 export default function MentalWellness() {
   return (
     <>
@@ -479,8 +477,6 @@ export default function MentalWellness() {
           </section>
         </div>
       </main>
-
-      <Footer />
     </>
   );
 }
