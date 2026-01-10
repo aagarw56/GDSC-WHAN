@@ -19,16 +19,6 @@ export default function Footer() {
               </p>
             </div>
 
-            {/* Quick Links */}
-            <nav className="footer__col">
-              <h4 className="footer__heading">Quick Links</h4>
-              <ul className="footer__links">
-                <li>
-                  <Link to="/about">About Us</Link>
-                </li>
-              </ul>
-            </nav>
-
             {/* Resources */}
             <nav className="footer__col" id="resources">
               <h4 className="footer__heading">Resources</h4>
@@ -40,10 +30,9 @@ export default function Footer() {
                   <Link to="/find-doctor">Find a Doctor</Link>
                 </li>
                 <li>
-                  <Link to="/forum">Community Forum</Link>
+                  <Link to="/community-forum">Community Forum</Link>
                 </li>
                 <li>
-                  <Link to="/faqs">FAQs</Link>
                 </li>
               </ul>
             </nav>

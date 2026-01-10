@@ -19,7 +19,15 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-left">
         <span className="logo"></span>
-        <h1>Women's Health Advancement Network</h1>
+        <h1
+  className="nav-home"
+  onClick={() => handleScroll("about")}
+  role="button"
+  tabIndex={0}
+>
+  Women's Health Advancement Network
+</h1>
+
       </div>
 
       <div className="nav-right">
@@ -27,8 +35,7 @@ export default function Navbar() {
         <button onClick={() => handleScroll("topics")}>Health Topics</button>
         <button onClick={() => handleScroll("articles")}>Articles</button>
         <button onClick={() => handleScroll("resources")}>Resources</button>
-    
-
+         
         {/* Go to another page */}
         <button
           className="nav-btn"
@@ -36,12 +43,8 @@ export default function Navbar() {
         >
           Login
         </button>
-        <a href="">Health Topics</a>
-        <a href="#">Articles</a>
-        <a href="#">Resources</a>
-        <a href="#">About</a>
         <button className="nav-btn">Sign Up Here</button>
-
+      
       </div>
     </nav>
   );

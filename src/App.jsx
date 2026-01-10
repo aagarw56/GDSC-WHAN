@@ -12,6 +12,9 @@ import About from "./pages/About";  // import About page
 import ScrollToHash from "./components/ScrollToHash";
 
 import AboutUs from "./pages/AboutUs";
+import Map from "./pages/Map";
+import HealthLibrary from "./pages/HealthLibrary";
+import CommunityForum from "./pages/CommunityForum";
 import Safety from "./pages/Safety";
 import MentalWellness from "./pages/MentalWellness";
 import HormonalHealth from "./pages/HormonalHealth";
@@ -55,6 +58,9 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/find-doctor" element={<Map />} />
+      <Route path="/community-forum" element={<CommunityForum />} />
+      <Route path="/health-library" element={<HealthLibrary />} />
       <Route path="/topics/safety" element={<Safety />} />
       <Route path="/topics/mental-wellness" element={<MentalWellness />} />
       <Route path="/topics/hormonal-health" element={<HormonalHealth />} />
