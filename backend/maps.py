@@ -15,7 +15,7 @@ def places():
     url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
     params = {
         "query": query,
-        "key": os.environ.get("GOOGLE_API_KEY")
+        "key": os.environ.get("VITE_GOOGLE_API_KEY")
     }
     #lat/lng, provided, search nearby
     if lat and lng:
