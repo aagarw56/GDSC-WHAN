@@ -40,9 +40,6 @@ function Home() {
             </>
           }
         />
-
-        <Route path="/login" element={<Login />} />
-        <Route path="/about" element={<About />} />  {/* About route */}
       </Routes>
 
       <Footer />
@@ -55,6 +52,8 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/about" element={<About />} />
       <Route path="/topics/safety" element={<Safety />} />
       <Route path="/topics/mental-wellness" element={<MentalWellness />} />
       <Route path="/topics/hormonal-health" element={<HormonalHealth />} />
