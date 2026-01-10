@@ -1,5 +1,3 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function AboutUs() {
   return (
@@ -9,7 +7,7 @@ export default function AboutUs() {
         <h1>About Us</h1>
         <p>Content for Safety topic goes here.</p>
       </main>
-      <Footer />
+      
     </>
   );
 }
