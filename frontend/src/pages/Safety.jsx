@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+
 import { useAuth } from "../context/AuthContext";
 import { trackResourceClick } from "../utils/trackClick";
 
@@ -420,8 +420,6 @@ export default function Safety() {
           </section>
         </div>
       </main>
-
-      <Footer />
     </>
   );
 }
